@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogBuy</class>
+ <widget class="QDialog" name="DialogBuy">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>369</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Покупка</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>30</y>
+     <width>160</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Valus">
+    <item>
+     <widget class="QLabel" name="CardName">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="owner">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="level">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="renta">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="costUp">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="cost">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>160</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Names">
+    <item>
+     <widget class="QLabel" name="l5">
+      <property name="text">
+       <string>Название</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l6">
+      <property name="text">
+       <string>Владелец</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l3">
+      <property name="text">
+       <string>Уровень</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l2">
+      <property name="text">
+       <string>Рента</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l1">
+      <property name="text">
+       <string>Стоимость улучшения</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l4">
+      <property name="text">
+       <string>Стоимость</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Купить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Отмена</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogBuy</receiver>
+   <slot>Buy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogBuy</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>271</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Buy()</slot>
+ </slots>
+</ui>
